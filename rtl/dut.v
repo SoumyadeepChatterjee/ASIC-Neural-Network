@@ -978,11 +978,7 @@ if(Conv_Output[2][19] == 1'b1)//MSN 1 is -ve
       output_maxpooling[15:8] <= pool_to_write[7:0];
     end
   end
-    //maybe make a structure
-    //like reg [7:0] Pooling_Output [0:1]
-    //use a counter (like an even/odd counter)
-    //counter determines if we write in [7:0] or [15:8]
-    //how the fuck do we index the output SRAM to write to the correct place?
+    
 
   end
   S10:
