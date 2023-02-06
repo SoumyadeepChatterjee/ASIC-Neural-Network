@@ -1,0 +1,221 @@
+#------------------------------------------------------------
+#
+# Basic Synthesis Script (TCL format)
+#                                  
+# Revision History                
+#   1/15/03  : Author Shane T. Gehring - from class example
+#   2/09/07  : Author Zhengtao Yu      - from class example
+#   12/14/07 : Author Ravi Jenkal      - updated to 180 nm & tcl
+#
+#------------------------------------------------------------
+#---------------------------------------------------------
+# Read in Verilog file and map (synthesize) onto a generic
+# library.
+# MAKE SURE THAT YOU CORRECT ALL WARNINGS THAT APPEAR
+# during the execution of the read command are fixed 
+# or understood to have no impact.
+# ALSO CHECK your latch/flip-flop list for unintended 
+# latches                                            
+#---------------------------------------------------------
+read_verilog $::env(RTL_FILES)
+Loading db file '/afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/nangate/NangateOpenCellLibrary_PDKv1_2_v2008_10/liberty/520/NangateOpenCellLibrary_PDKv1_2_v2008_10_slow_nldm.db'
+Loading db file '/mnt/apps/public/COE/synopsys_apps/syn/S-2021.06-SP3/libraries/syn/dw_foundation.sldb'
+Loading db file '/mnt/apps/public/COE/synopsys_apps/syn/S-2021.06-SP3/libraries/syn/gtech.db'
+Loading db file '/mnt/apps/public/COE/synopsys_apps/syn/S-2021.06-SP3/libraries/syn/standard.sldb'
+  Loading link library 'NangateOpenCellLibrary_PDKv1_2_v2008_10_slow_nldm'
+  Loading link library 'gtech'
+Loading verilog file '/afs/unity.ncsu.edu/users/s/schatte5/projectFall2022/rtl/dut.v'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /afs/unity.ncsu.edu/users/s/schatte5/projectFall2022/rtl/dut.v
+Warning:  /afs/unity.ncsu.edu/users/s/schatte5/projectFall2022/rtl/dut.v:354: signed to unsigned part selection occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/s/schatte5/projectFall2022/rtl/dut.v:355: signed to unsigned part selection occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/s/schatte5/projectFall2022/rtl/dut.v:611: signed to unsigned part selection occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/s/schatte5/projectFall2022/rtl/dut.v:612: signed to unsigned part selection occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/s/schatte5/projectFall2022/rtl/dut.v:786: signed to unsigned part selection occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/s/schatte5/projectFall2022/rtl/dut.v:787: signed to unsigned part selection occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/s/schatte5/projectFall2022/rtl/dut.v:788: signed to unsigned part selection occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/s/schatte5/projectFall2022/rtl/dut.v:789: signed to unsigned part selection occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/s/schatte5/projectFall2022/rtl/dut.v:801: signed to unsigned part selection occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/s/schatte5/projectFall2022/rtl/dut.v:802: signed to unsigned part selection occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/s/schatte5/projectFall2022/rtl/dut.v:803: signed to unsigned part selection occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/s/schatte5/projectFall2022/rtl/dut.v:804: signed to unsigned part selection occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/s/schatte5/projectFall2022/rtl/dut.v:831: signed to unsigned part selection occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/s/schatte5/projectFall2022/rtl/dut.v:832: signed to unsigned part selection occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/s/schatte5/projectFall2022/rtl/dut.v:833: signed to unsigned part selection occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/s/schatte5/projectFall2022/rtl/dut.v:834: signed to unsigned part selection occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/s/schatte5/projectFall2022/rtl/dut.v:868: signed to unsigned conversion occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/s/schatte5/projectFall2022/rtl/dut.v:882: signed to unsigned conversion occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/s/schatte5/projectFall2022/rtl/dut.v:896: signed to unsigned conversion occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/s/schatte5/projectFall2022/rtl/dut.v:910: signed to unsigned conversion occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/s/schatte5/projectFall2022/rtl/dut.v:924: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/s/schatte5/projectFall2022/rtl/dut.v:928: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/s/schatte5/projectFall2022/rtl/dut.v:933: signed to unsigned assignment occurs. (VER-318)
+Warning:  /afs/unity.ncsu.edu/users/s/schatte5/projectFall2022/rtl/dut.v:937: signed to unsigned assignment occurs. (VER-318)
+Warning: Could not open default SVF file /afs/unity.ncsu.edu/users/s/schatte5/projectFall2022/synthesis/svf/default.svf for writing.
+
+Statistics for case statements in always block at line 157 in file
+	'/afs/unity.ncsu.edu/users/s/schatte5/projectFall2022/rtl/dut.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           159            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 231 in file
+	'/afs/unity.ncsu.edu/users/s/schatte5/projectFall2022/rtl/dut.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           233            |     no/auto      |
+===============================================
+
+Statistics for case statements in always block at line 280 in file
+	'/afs/unity.ncsu.edu/users/s/schatte5/projectFall2022/rtl/dut.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           282            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 328 in file
+	'/afs/unity.ncsu.edu/users/s/schatte5/projectFall2022/rtl/dut.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           330            |     no/auto      |
+===============================================
+
+Statistics for case statements in always block at line 368 in file
+	'/afs/unity.ncsu.edu/users/s/schatte5/projectFall2022/rtl/dut.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           370            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 448 in file
+	'/afs/unity.ncsu.edu/users/s/schatte5/projectFall2022/rtl/dut.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           479            |     no/auto      |
+|           539            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 647 in file
+	'/afs/unity.ncsu.edu/users/s/schatte5/projectFall2022/rtl/dut.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           649            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 729 in file
+	'/afs/unity.ncsu.edu/users/s/schatte5/projectFall2022/rtl/dut.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           770            |     no/auto      |
+|           842            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine MyDesign line 138 in file
+		'/afs/unity.ncsu.edu/users/s/schatte5/projectFall2022/rtl/dut.v'.
+=======================================================================================
+|        Register Name        |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=======================================================================================
+|  Kernel_Current_State_reg   | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   Conv_Current_State_reg    | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+| Top_Level_Current_State_reg | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  Reading_Current_State_reg  | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+=======================================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 231 in file
+		'/afs/unity.ncsu.edu/users/s/schatte5/projectFall2022/rtl/dut.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   conv_begin_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|    dut_busy_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|  kernel_begin_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|   input_begin_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 328 in file
+		'/afs/unity.ncsu.edu/users/s/schatte5/projectFall2022/rtl/dut.v'.
+=========================================================================================
+|         Register Name         |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=========================================================================================
+|      kernel_req_base_reg      | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+|     kernel_req_offset_reg     | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+|    kernel_iter_counter_reg    | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+|       Kernel_index_reg        | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+| weights_sram_read_address_reg | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+|       Kernel_Matrix_reg       | Flip-flop |  72   |  Y  | N  | N  | N  | N  | N  | N  |
+=========================================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 448 in file
+		'/afs/unity.ncsu.edu/users/s/schatte5/projectFall2022/rtl/dut.v'.
+===========================================================================================
+|          Register Name          |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================================
+|         N_received_reg          | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|      input_req_offset_reg       | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+|        Extra_Matrix_reg         | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+|     Input_Matrix_index_reg      | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+| count_reading_column_switch_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|   input_sram_read_address_reg   | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+|         conv_ready_reg          | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|    Input_Matrix_Section_reg     | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+|      Final_Input_Found_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|           N_input_reg           | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|    input_req_row_strider_reg    | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+|  count_reading_row_switch_reg   | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|       input_req_base_reg        | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+===========================================================================================
+
+Inferred memory devices in process
+	in routine MyDesign line 729 in file
+		'/afs/unity.ncsu.edu/users/s/schatte5/projectFall2022/rtl/dut.v'.
+==========================================================================================
+|         Register Name          |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+==========================================================================================
+|        conv_temp_3_reg         | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|   output_sram_write_data_reg   | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|        conv_temp_1_reg         | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|     output_maxpooling_reg      | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       output_offset_reg        | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|  output_sram_write_enable_reg  | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|        temp_pool_2_reg         | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|      conv_in_progress_reg      | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|        conv_temp_2_reg         | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|        temp_pool_1_reg         | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| output_sram_write_addresss_reg | Flip-flop |  12   |  Y  | N  | N  | N  | N  | N  | N  |
+|       mult_iteration_reg       | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+|      maxpooling_flag_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|    mult_input_iterator_reg     | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+|        Conv_Output_reg         | Flip-flop |  80   |  Y  | N  | N  | N  | N  | N  | N  |
+|      relu_done_extra_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|        conv_temp_4_reg         | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|        relu_counter_reg        | Flip-flop |  11   |  Y  | N  | N  | N  | N  | N  | N  |
+|         relu_done_reg          | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|       pool_to_write_reg        | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|      maxpooling_done_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+==========================================================================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+|   MyDesign/824   |   16   |    8    |      4       |
+======================================================
+Presto compilation completed successfully.
+Current design is now '/afs/unity.ncsu.edu/users/s/schatte5/projectFall2022/rtl/MyDesign.db:MyDesign'
+Loaded 1 design.
+Current design is 'MyDesign'.
+MyDesign
